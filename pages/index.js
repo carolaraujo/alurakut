@@ -39,7 +39,7 @@ export default function Home() {
             <OrkutNostalgicIconSet />
           </Box>
         </div>
-        <div className="profileprofileRelationsArea" style={{ gridArea: 'profileprofileRelationsArea' }}>
+        <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
               Pessoas da comunidade ({pessoasFavoritas.length})
