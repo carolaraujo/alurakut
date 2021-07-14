@@ -4,6 +4,7 @@ import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AluraKutCommons'
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
 
 function ProfileSideBar(propriedades){
+  console.log(propriedades);
   return (
     <Box>
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{ borderRadius: '8px'}}/>
@@ -13,7 +14,14 @@ function ProfileSideBar(propriedades){
 
 export default function Home() {
   const usuarioAleatorio = 'carolaraujo';
-  const pessoasFavoritas = [ 'juunegreiros', 'omariosouto', 'peas', 'marcobrunodev', 'felipefialho']
+  const pessoasFavoritas = [ 
+    'hamvocke',
+    'peas', 
+    'MichelliBrito', 
+    'yogmel', 
+    'borgesdn', 
+    'albertotavareszup'
+  ]
 
   return (
     <div>
@@ -33,7 +41,10 @@ export default function Home() {
         </div>
         <div className="profilprofileRelationsArea" style={{ gridArea: 'profilprofileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
-            <h2 className="smallTitle">Pessoas da comunidade ({pessoasFavoritas.length})</h2>        
+            <h2 className="smallTitle">
+              Pessoas da comunidade ({pessoasFavoritas.length})
+            </h2>        
+            
             <ul>
               {pessoasFavoritas.map((itemAtual) => {
                 return (
