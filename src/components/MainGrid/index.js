@@ -3,8 +3,7 @@ import styled from 'styled-components';
 const MainGrid = styled.main`
  width: 100%;
  grid-gap: 10px;
- margin-left: auto;
- max-right: auto;
+ margin: 0 auto;
  max-width: 500px;
  padding: 16px;
  .profileArea{
