@@ -39,12 +39,12 @@ export default function Home() {
             <OrkutNostalgicIconSet />
           </Box>
         </div>
-        <div className="profilprofileRelationsArea" style={{ gridArea: 'profilprofileRelationsArea' }}>
+        <div className="profilprofileRelationsArea" style={{ gridArea: 'profileprofileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
               Pessoas da comunidade ({pessoasFavoritas.length})
             </h2>        
-            
+
             <ul>
               {pessoasFavoritas.map((itemAtual) => {
                 return (
